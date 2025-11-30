@@ -20,5 +20,7 @@ M.base46 = {
 --          lazyload = false
 --      }
 -- }
-
+pcall(require, "custom.lsp")
+pcall(require, "custom.mappings")
+pcall(require, "custom.settings")
 return M
