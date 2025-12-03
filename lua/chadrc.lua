@@ -5,22 +5,38 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.base46 = {
-	theme = "onedark",
-
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
-}
-
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
 --       tabufline = {
 --          lazyload = false
 --      }
 -- }
-pcall(require, "custom.lsp")
-pcall(require, "custom.mappings")
-pcall(require, "custom.settings")
+M.base46 = {
+  theme = "catppuccin",
+  transparency = true,
+
+  hl_override = {
+    Normal         = { bg = "NONE" },
+    NormalNC       = { bg = "NONE" },
+    NormalFloat    = { bg = "NONE" },
+    FloatBorder    = { bg = "NONE" },
+    CursorLine     = { bg = "NONE" },
+    SignColumn     = { bg = "NONE" },
+
+    TelescopeNormal = { bg = "NONE" },
+    TelescopeBorder = { bg = "NONE" },
+
+    NvimTreeNormal  = { bg = "NONE" },
+    NvimTreeNormalNC = { bg = "NONE" },
+    NvimTreeEndOfBuffer = { bg = "NONE" },
+
+    StatusLine      = { bg = "NONE" },
+    StatusLineNC    = { bg = "NONE" },
+
+    WhichKeyFloat   = { bg = "NONE" },
+
+    Pmenu           = { bg = "NONE" },
+    PmenuSel        = { bg = "NONE" },
+  },
+}
 return M
